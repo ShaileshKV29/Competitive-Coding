@@ -27,6 +27,16 @@ class LinkedList
                 p->next = nullptr;
             }
         }
+
+        void display()
+        {
+            Node *p = first;
+            while(p != nullptr)
+            {
+                cout << p->data << " ";
+                p = p->next;
+            }
+        }
 };
 
 int main()
