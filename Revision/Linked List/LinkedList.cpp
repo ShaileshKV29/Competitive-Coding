@@ -17,14 +17,18 @@ class LinkedList
         LinkedList(int arr[], int n)
         {
             Node *p = new Node;
+            Node *q;
             p->data = arr[0];
+            p->next = nullptr;
             first = p;
 
             for(int i = 1; i < n; i++)
             {
-                p = new Node;
-                p->data = arr[i];
-                p->next = nullptr;
+                q = new Node;
+                q->data = arr[i];
+                q->next = nullptr;
+                p->next = q;
+                p = q;
             }
         }
 
@@ -41,7 +45,10 @@ class LinkedList
 
 int main()
 {
-    
+    int arr[5] = {1,2,3,4,5};
+
+    LinkedList llist(arr, 5);
+    llist.display();
 
     return 0;
 }
