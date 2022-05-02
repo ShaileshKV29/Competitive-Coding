@@ -50,8 +50,8 @@ int binary_search_last(int arr[], int n, int key)
 int main()
 {
     int arr[10] = {1,1,2,2,2,2,2,2,4,5}; 
-    cout << binary_search_first(arr, 10, 2) << endl;   
-    cout << binary_search_last(arr, 10, 2) << endl;   
+    cout << binary_search_first(arr, 10, 5) << endl;   
+    cout << binary_search_last(arr, 10, 5) << endl;   
 
     return 0;
 }
