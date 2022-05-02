@@ -40,7 +40,7 @@ int total_occurance(vector<int> arr, int n, int key)
     }
 
     if(first == -1 || last == -1)
-        return -1;
+        return 0;
 
     return last - first + 1;
 }
@@ -48,6 +48,6 @@ int total_occurance(vector<int> arr, int n, int key)
 int main()
 {
     vector<int> arr = {1,1,2,2,2,2,5,6,6,6};
-    cout << total_occurance(arr, 10, 1);
+    cout << total_occurance(arr, 10, 10);
     return 0;
 }
