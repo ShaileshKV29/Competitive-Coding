@@ -24,6 +24,7 @@ int searchInsert(vector<int>& arr, int target)
     return mid + 1;
 }
 
+
 int main()
 {
     vector<int> arr = {1,3,5,6,8};
