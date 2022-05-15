@@ -11,7 +11,9 @@ int main()
     while(i != size_a || j != size_b)
     {
         if(a[i] > b[j])
-        {}
+        {
+            
+        }
     }
 
     return 0;
