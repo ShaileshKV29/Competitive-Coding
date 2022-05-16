@@ -12,7 +12,6 @@ int main()
     {
         if(a[i] > b[j])
         {
-            
         }
     }
 
