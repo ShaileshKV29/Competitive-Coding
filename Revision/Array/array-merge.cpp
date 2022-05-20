@@ -8,12 +8,12 @@ int main()
     int i = 0, j = 0;
     int size_a = sizeof(a)/sizeof(a[0]);
     int size_b = sizeof(b)/sizeof(b[0]);
-    while(i != size_a || j != size_b)
-    {
-        if(a[i] > b[j])
-        {
-        }
-    }
+    // while(i != size_a || j != size_b)
+    // {
+    //     if(a[i] > b[j])
+    //     {
+    //     }
+    // }
 
     return 0;
 }
