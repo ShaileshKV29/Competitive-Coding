@@ -26,6 +26,7 @@ int main()
             k++;j++;
         }
     }
+    
 
     for(; i < n; i++)
     {
