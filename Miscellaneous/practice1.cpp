@@ -25,6 +25,8 @@ int main()
         else if(arr[i] == 0)
             count_closed++;
         // cout << arr[i] << " ";
+
+        
     }
     // cout << endl;
     cout << count_open << endl;
