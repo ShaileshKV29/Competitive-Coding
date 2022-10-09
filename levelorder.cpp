@@ -64,6 +64,8 @@ class Tree
                 Node *t = new Node(right);
                 p->right = t;
                 que.push(t);
+
+                
             }
         }
     }
