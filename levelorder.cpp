@@ -65,6 +65,8 @@ class Tree
                 p->right = t;
                 que.push(t);
             }
+
+            
         }
     }
 
