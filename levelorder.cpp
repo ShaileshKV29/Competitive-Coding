@@ -59,14 +59,14 @@ class Tree
             cout << "Enter Right Child: ";
             cin >> right;
 
+
+
             if(right != -1)
             {
                 Node *t = new Node(right);
                 p->right = t;
                 que.push(t);
             }
-
-            
         }
     }
 
