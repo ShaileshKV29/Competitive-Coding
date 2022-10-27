@@ -16,7 +16,20 @@ class Node
 
 class LinkedList
 {
+    Node *head;
 
+    public:
+        LinkedList(int arr[], int n)
+        {
+            Node *p = new Node(arr[0]);
+            head = p;
+            for(int i = 1; i < n; i++)
+            {
+                Node *t = new Node(arr[i]);
+                p->next = t;
+                p = t;
+            }
+        }
 };
 
 int main()
