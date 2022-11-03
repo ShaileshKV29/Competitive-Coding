@@ -29,23 +29,36 @@ class Tree
             queue<Node *> que;
             que.push(root);
 
-            while(!que.empty())
+            int i = 1;
+            while(i < n)
             {
                 Node *p = que.front();
                 que.pop();
 
-                int lchild;
-                int rchild;
+                if(i < n){
+                    Node *t = new Node(arr[i]);
+                    que.push(t);
+                    p->left = t;
+                    i++;
+                }
 
-                cout << "Enter Left Child: ";
-                cin >> lchild;
+                if(i < n)
+                {
+                    Node *t = new Node(arr[i]);
+                    que.push(t);
+                    p->right = t;
+                    i++;
+                }
             }
         }
 
-}
+};
 
 
 int main()
 {
+    int arr[10] = {1,2,3,4,5,6,7,8,9,10};
+    Tree tree(arr, 10);
+
     return 0;
 }
