@@ -19,12 +19,12 @@ class Node
 
 class Tree
 {
-    Node *root;
+    Node *root = nullptr;
 
     public:
         Tree(int arr[], int n)
         {
-            Node *root = new Node(arr[0]);
+            root = new Node(arr[0]);
 
             queue<Node *> que;
             que.push(root);
@@ -52,6 +52,26 @@ class Tree
             }
         }
 
+        // void preOrder()
+        // {
+        //     preOrderRev(root);
+        // }
+
+        // void preOrderRev(Node *p)
+        // {
+        //     if(p != nullptr)
+        //     {
+        //         cout << p->data << " ";
+        //         preOrderRev(p->left);
+        //         preOrderRev(p->right);
+        //     }
+        // }
+
+        void preOrder()
+        {
+            
+        }
+
 };
 
 
@@ -59,6 +79,8 @@ int main()
 {
     int arr[10] = {1,2,3,4,5,6,7,8,9,10};
     Tree tree(arr, 10);
+
+    tree.preOrder();
 
     return 0;
 }
