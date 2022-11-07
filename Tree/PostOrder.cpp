@@ -93,7 +93,27 @@ class Tree
 
         void postOrder()
         {
-            
+            Node *p = root;
+            stack<Node *> st1;
+            stack<Node *> st2;
+
+            st1.push(p);
+            while(!st1.empty())
+            {
+                Node *t = st1.top();
+                st1.pop();
+
+                st2.push(t);
+                if(t->left)
+                    st1.push(t->left);
+                if(t->right)
+                    st1.push(t->right);
+            }
+            while(!st2.empty())
+            {
+                cout << st2.top()->data << " ";
+                st2.pop();
+            }
         }
 
 };
@@ -105,6 +125,8 @@ int main()
     Tree tree(arr, 10);
 
     tree.levelOrder();
+    cout << endl;
+    tree.postOrder();
 
     return 0;
 }
